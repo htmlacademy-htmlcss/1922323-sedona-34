@@ -5,8 +5,7 @@
     <title>Каталог отелей Седоны</title>
   </head>
   <body>
-    <header>
-      <header class="page-header">
+    <header class="page-header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" alt="Логотип городка Седона." src="">
@@ -34,6 +33,7 @@
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
+            <li>
               <a class="button" href="catalog.html">Хочу сюда!</a>
             </li>
           </ul>
@@ -114,6 +114,9 @@
             <button class="button" type="submit">Применить</button>
             <button class="button" type="reset">Сбросить</button>
           </form>
+        </section>  
+      </header>
+        <section class="hotels-results">
           <b>Найдено гостиниц: 38</b>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
@@ -186,6 +189,7 @@
               <img class="rating-stars" src="" alt="Рейтинг отеля - 2 звезды.">
               <i class="overall-rating">РЕЙТИНГ: 5,0</i>
             </li>
+          </ul>
 
             <ul class="pagination">              
               <li class="pagination-item">
@@ -211,23 +215,22 @@
             </ul>
           <div class="number of hotels">
             <label for="hotels">Гостиниц на странице:</label>        
-            <input type="number" list="hotels" name="hotels" min="3" max="6" value="4">
+            <input type="number" list="hotels-number" id="hotels" name="hotels" min="3" max="6" value="4">
 
-              <datalist id="hotels">
+              <datalist id="hotels-number">
                 <option value="3"></option>
                 <option value="4"></option>
                 <option value="5"></option>
                 <option value="6"></option>
               </datalist>
           </div>
-        </section>        
-      </main>
-      <section class="newsletter">
+        </section>
+      </main>      
+        <section class="newsletter">
         <h2>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-
-          <label for="newsletter-email visually-hidden">Email</label>
+          
           <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
 
           <button class="button newsletter-button" type="submit">
@@ -235,7 +238,7 @@
           </button>
         </form>
       </section>
-    </main>
+    
     <footer class="page-footer">
       <section class="footer-social">
         <h2 class="page-footer-title visually-hidden">Мы в соцсетях</h2>
