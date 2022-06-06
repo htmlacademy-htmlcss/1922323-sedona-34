@@ -45,6 +45,11 @@ body {
     text-align: center;
 }
 
+.advantages-wrapper {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
 .advantages-title {
     font-weight: 700;
     font-size: 30px;
@@ -61,6 +66,14 @@ body {
 .item-dark-blue {
     color: #fff;
     background-color: #82B3D3;
+}
+
+.item-white {
+    background-color: #fff;
+}
+
+.item-blue {
+    background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item-title {
