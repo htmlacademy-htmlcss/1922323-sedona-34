@@ -23,6 +23,19 @@ body {
     background-color: #fff;
 }
 
+.button {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #756157;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
   /* Header */
 
 .navigation-link {
@@ -41,6 +54,7 @@ body {
     background-repeat: no-repeat;
 }
 
+ /* Приемущества */
 .advantages {
     text-align: center;
 }
@@ -81,4 +95,42 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+
+}
+
+.search-hotels {
+    text-align: center;
+}
+
+.button-blue {
+    background-color: #82B3D3;
+}
+
+.newsletter {
+    color: #fff;
+    background-color: #82B3D3;
+    background-image: url("../images/background-newsletter.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.newsletter-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.footer-contacts-address-phone {
+    color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.page-footer {
+    text-align: center;
 }
