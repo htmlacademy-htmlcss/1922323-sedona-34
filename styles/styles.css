@@ -1,10 +1,10 @@
 @font-face {
-  
+
     font-family: "PT Sans";
     font-style: normal;
-    font-weight: 400;   
+    font-weight: 400;
     src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;    
+    font-display: swap;
 }
 
 @font-face {
@@ -22,7 +22,7 @@ body {
     color: #000;
     background-color: #fff;
 }
-
+/* Button */
 .button {
     font-family: inherit;
     font-style: normal;
@@ -41,8 +41,7 @@ body {
     list-style-type: none;
 }
 
-  /* Header */
-
+/* Header */
 .navigation-link {
     font-weight: 700;
     font-size: 20px;
@@ -102,11 +101,11 @@ body {
     text-transform: uppercase;
 
 }
-
+/* Поиск отелей */
 .search-hotels {
     text-align: center;
 }
-
+/* Кнопки */
 .button-blue {
     background-color: #82B3D3;
 }
@@ -115,7 +114,7 @@ body {
     font-weight: 400;
     background-color: rgba(131, 179, 211, 0);
     text-decoration: none;
-    text-transform: capitalize;    
+    text-transform: capitalize;
 }
 
 .button-fav {
