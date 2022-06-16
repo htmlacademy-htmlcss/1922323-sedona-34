@@ -31,6 +31,10 @@ body {
     background-color: #fff;
 }
 
+img {
+    display: block;
+}
+
 .page-wrapper {
     width: 1200px;
     margin: 0 auto;
@@ -51,7 +55,7 @@ body {
 }
 
 .list-style {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -110,7 +114,7 @@ body {
  /* Приемущества */
 .advantages {
     text-align: center;
-    padding: 0;
+    margin: 0;
 }
 
 .advantages-wrapper {
@@ -120,7 +124,6 @@ body {
     padding: 0;
     color: #000000;
     background-color: rgba(131, 179, 211, 0.12);
-
 }
 
 .advantages-title {
@@ -132,26 +135,28 @@ body {
     width: 620px;
 }
 
+.advantages-title-wrapper {
+    padding-top: 64px;
+    padding-bottom: 90px;
+}
+
+.advantages-title-text {
+    margin: 0;
+    padding-top: 30px;
+}
+
 .advantages-list {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
 }
 
-.advantages-item {
-    width: 400px;
-}
-
-.advantages-item-first {
-    display: flex;
-    width: 1200px;
-}
-
-.advantages-item-first__text{
-    width: 400px;
+.advantages-item__text {
+    width: 230px;
 }
 
 .item-dark-blue {
+    width: 400px;
     color: #fff;
     background-color: #82B3D3;
 }
