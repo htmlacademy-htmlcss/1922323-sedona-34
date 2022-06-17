@@ -107,7 +107,6 @@ img {
 }
 
 .welcome-picture-content {
-    display: block;
     margin: 0 auto;
 }
 
@@ -118,10 +117,6 @@ img {
 }
 
 .advantages-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
     color: #000000;
     background-color: rgba(131, 179, 211, 0.12);
 }
@@ -146,6 +141,10 @@ img {
 }
 
 .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -153,6 +152,10 @@ img {
 
 .advantages-item__text {
     width: 230px;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-top: 92px;
+    padding-bottom: 92px;
 }
 
 .item-dark-blue {
@@ -170,15 +173,41 @@ img {
 }
 
 .advantages-item-title {
+    padding: 0;
+    margin: 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    padding-bottom: 30px;
+}
 
+.advantages-description {
+    padding: 0;
+    margin: 0;
+}
+
+.advantages-description__number {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
 }
 /* Поиск отелей */
 .search-hotels {
     text-align: center;
+    margin-top: 92px;
+    margin-bottom: 92px;
+}
+
+.search-title {
+    margin: 0;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.call-to-search {
+    margin: 0;
+    padding-bottom: 56px;
 }
 /* Кнопки */
 .button-blue {
@@ -199,6 +228,7 @@ img {
 .big-button {
     font-size: 20px;
 }
+/*Подписка на новости*/
 
 .newsletter {
     color: #fff;
@@ -210,9 +240,36 @@ img {
 }
 
 .newsletter-title {
+    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 30px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+    text-transform: uppercase;
+}
+
+.call-to-subscribe {
+    margin: 0;
+    padding-bottom: 46px;
+}
+
+.newsletter-form {
+    padding-bottom: 94px;
+}
+
+/* Подвал */
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+.footer-social-list {
+    width: 142px;
 }
 
 .footer-contacts-address-phone {
@@ -223,6 +280,9 @@ img {
     line-height: 40px;
     text-transform: uppercase;
     text-decoration: none;
+    width: 720px;
+    margin-left: 42px;
+    margin-right: 42px;
 }
 
 .page-footer {
