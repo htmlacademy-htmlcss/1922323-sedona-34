@@ -291,6 +291,15 @@ img {
     text-align: center;
 }
 
+/*Хлебные крошки*/
+
+.breadcrumbs-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
 /* Фильтр гостиниц */
 .inner-header {
     color: #ffffff;
@@ -299,6 +308,38 @@ img {
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
+
+.inner-header-title {
+    margin: 0;
+    padding-left: 70px;
+    padding-top: 35px;
+}
+
+.catalog-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 70px 70px 70px;
+    width: 1060px;
+}
+
+.buttons-filter-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.results-wrapper {
+    display: flex;
+    margin: 0 auto;
+}
+
+.hotel-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
 
 /*Пагинация*/
 .pagination-link {
