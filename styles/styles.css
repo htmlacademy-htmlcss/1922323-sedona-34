@@ -218,6 +218,7 @@ img {
     margin: 0;
     padding-bottom: 30px;
 }
+
 /* Поиск отелей */
 .search-hotels {
     text-align: center;
@@ -235,6 +236,7 @@ img {
     margin: 0;
     padding-bottom: 56px;
 }
+
 /* Кнопки */
 .button-blue {
     background-color: #82B3D3;
@@ -254,8 +256,8 @@ img {
 .big-button {
     font-size: 20px;
 }
-/*Подписка на новости*/
 
+/*Подписка на новости*/
 .newsletter {
     color: #fff;
     background-color: #82B3D3;
@@ -284,8 +286,15 @@ img {
     padding-bottom: 94px;
 }
 
-/* Подвал */
+.field {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
 
+/* Подвал */
 .footer-wrapper {
     display: flex;
     justify-content: center;
@@ -297,7 +306,7 @@ img {
 .footer-social-list {
     display: flex;
     flex-wrap: wrap;
-    width: 144x;
+    width: 144px;
 }
 
 .footer-social-item {
@@ -372,8 +381,10 @@ img {
     flex-direction: column;
 }
 
+/*Результаты поиска*/
 .results-wrapper {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding: 55px 72px;
 }
@@ -390,7 +401,6 @@ img {
 .group-results {
     width: 48px;
     height: 48px;
-
 }
 
 .group-results:not(:last-child) {
@@ -398,12 +408,57 @@ img {
 }
 
 .hotel-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    column-gap: 18px;
+    margin-top: 56px;
     margin-bottom: 96px;
 }
 
+.hotel-card-image {
+    margin-bottom: 16px;
+}
+
+.hotel-card-title{
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.hotel-card-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.hotel-card-type {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.hotel-card-price {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.hotel-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.hotel-card-content {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    gap: 16px 20px;
+}
+
+.overall-rating {
+    color: #000000;
+    background-color: #F2F2F2;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 /*Пагинация*/
 .pagination-wrapper {
