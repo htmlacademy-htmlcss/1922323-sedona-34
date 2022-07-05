@@ -75,12 +75,14 @@ body {
 }
 /* Header */
 .page-header {
-    padding-left: 70px;
-    padding-right: 70px;
+    position: relative;
+    margin: 0 70px;
 }
 
 .page-header-logo {
-    margin-right: 30px;
+    position: absolute;
+    z-index: 1;
+    left: 70px;
 }
 
 .navigation {
@@ -97,6 +99,7 @@ body {
     margin: 0;
     padding: 0;
     width: 450px;
+    padding-left: 239px;
 }
 
 .navigation-user {
@@ -116,6 +119,7 @@ body {
 }
 
 .navigation-link {
+    position: relative;
     display: block;
     padding: 20px 17px;
     line-height: 26px;
@@ -125,6 +129,16 @@ body {
     text-decoration: none;
     text-transform: capitalize;
 }
+
+.navigation-link-current::before {
+    position: absolute;
+    content: "";
+    right: 15px;
+    left: 15px;
+    height: 2px;
+    bottom: 0;
+    background-color: #756257;
+  }
 
 .navigation-user .navigation-link {
     min-width: 8px;
@@ -162,6 +176,12 @@ body {
     left: 24px;
 }
 
+.want-to {
+    padding: 9px 34px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
 .welcome-picture {
     position: relative;
     color: #fff;
@@ -179,10 +199,11 @@ body {
 
 .welcome-picture::after {
     position: absolute;
-    padding: 0%;
+    padding: 0;
     margin: 0;
     content: url('../images/decoration-welcome-pic.svg');
-    bottom: -6px;
+    bottom: 0;
+    height: 57px;
 }
 
  /* Приемущества */
@@ -265,6 +286,7 @@ body {
 }
 
 .advantages-description {
+    white-space: pre-line;
     padding: 0;
     margin: 0;
 }
@@ -318,6 +340,7 @@ body {
 
 .big-button {
     font-size: 20px;
+    line-height: 36px;
 }
 
 /*Подписка на новости*/
@@ -346,6 +369,9 @@ body {
 }
 
 .newsletter-form {
+    display: flex;
+    justify-content: center;
+    margin: 0 200px;
     padding-bottom: 94px;
 }
 
@@ -355,6 +381,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    width: 600px;
 }
 
 /* Подвал */
@@ -373,8 +400,23 @@ body {
 }
 
 .footer-social-item {
+    position: relative;
     width: 48px;
     height: 40px;
+}
+
+.footer-social-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #83B3D3;
+}
+
+.footer-social-link:hover .footer-social-icon {
+    fill: #68A2CA;
 }
 
 .footer-contacts-address-phone {
@@ -388,6 +430,34 @@ body {
     width: 720px;
     margin-left: 42px;
     margin-right: 42px;
+}
+
+.footer-contacts-address-phone:hover {
+    color: #756157;
+}
+
+.footer-contacts-address-phone:focus {
+    color: #756157;
+    outline: none;
+}
+
+.footer-contacts-address-phone:active {
+    color: #756157;
+    opacity: 30%;
+}
+
+.footer-logo-html-academy:hover {
+    fill: #756157;
+}
+
+.footer-logo-html-academy:focus {
+    fill: #756157;
+    outline: none;
+}
+
+.footer-logo-html-academy:active {
+    fill: #756157;
+    opacity: 30%;
 }
 
 .page-footer {
