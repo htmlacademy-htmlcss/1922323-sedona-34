@@ -465,6 +465,14 @@ body {
     fill: #68A2CA;
 }
 
+.footer-social-link:focus .footer-social-icon {
+    fill: #68A2CA;
+}
+
+.footer-social-link:active .footer-social-icon {
+    opacity: 30%;
+}
+
 .footer-contacts-address-phone {
     color: #000000;
     font-style: normal;
@@ -492,16 +500,16 @@ body {
     opacity: 30%;
 }
 
-.footer-logo-html-academy:hover {
+.page-footer-logo:hover .footer-logo-html-academy {
     fill: #756157;
 }
 
-.footer-logo-html-academy:focus {
+.page-footer-logo:focus .footer-logo-html-academy {
     fill: #756157;
     outline: none;
 }
 
-.footer-logo-html-academy:active {
+.page-footer-logo:active .footer-logo-html-academy {
     fill: #756157;
     opacity: 30%;
 }
