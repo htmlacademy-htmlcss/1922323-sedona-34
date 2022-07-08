@@ -141,19 +141,21 @@
         <section class="hotels-results">
           <div class="results-wrapper">
             <h2 class="results-title">Найдено гостиниц: 38</h2>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвые</option>
-              <option value="popular">Сначала популярные</option>
-              <option value="expensive">Сначала дорогие</option>
-            </select>
+            <div class="select">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="popular">Сначала популярные</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+            </div>
             <div class="view-results-wrapper">
-              <div class="current-view group-results">
+              <div class="current-view group-results group-results__table">
                 <span class="visually-hidden">Показать карточки</span>
               </div>
-              <a class="group-results" href="#">
+              <a class="group-results group-results__slideshow" href="#">
                 <span class="visually-hidden">Показать слайды</span>
               </a>
-              <a class="group-results" href="#">
+              <a class="group-results group-results__list" href="#">
                 <span class="visually-hidden">Показать список</span>
               </a>
             </div>
@@ -266,7 +268,7 @@
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
-          <button class="button button-blue big-button" type="submit">Подписаться</button>
+          <button class="button button-blue big-button submit-button" type="submit">Подписаться</button>
         </form>
       </section>
       <!-- Подвал -->
