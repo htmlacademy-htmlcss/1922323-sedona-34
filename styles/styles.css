@@ -161,13 +161,13 @@ body {
     min-height: 26px;
 }
 
-.navigation-user .navigation-item:nth-child(1) .navigation-link{
+.navigation-user .navigation-item:nth-child(1) {
     background-image: url('../images/search.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link{
+.navigation-user .navigation-item:nth-child(2) {
     background-image: url('../images/favorite.svg');
     background-repeat: no-repeat;
     background-position: center;
