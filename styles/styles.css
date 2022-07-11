@@ -1257,7 +1257,7 @@ body {
     width: 25px;
     height: 25px;
     top: -1px;
-    right: 30px;
+    right: -15px;
 }
 
 .tooltip-toggle {
