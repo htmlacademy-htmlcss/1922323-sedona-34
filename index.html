@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon/favicon.ico">
   </head>
 
   <body>
@@ -171,7 +172,7 @@
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
               required>
-            <button class="button button-blue big-button" type="submit">
+            <button class="button button-blue big-button submit-button" type="submit">
               <span>Подписаться</span>
             </button>
           </form>
@@ -222,6 +223,89 @@
           </div>
         </section>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="modal-filter-group">
+                <legend class="visually-hidden">Бронирование отеля.</legend>
+                <ol class="modal-filter-list list-style">
+                  <li class="modal-filter-label">
+                    Дата заезда:
+                  </li>
+                  <li class="date-in">
+                    <input class="check-in-out-dates" type="date" value="2020-04-27" min="2022-02-24"
+                      placeholder="Укажите дату" required>
+                    <span class="check-in-text">Мы не можем отправить вас в прошлое.</span>
+                  </li>
+                  <li class="modal-filter-label">
+                    Дата выезда:
+                  </li>
+                  <li class="date-out">
+                    <input class="check-in-out-dates" type="date" value="2021-09-01" placeholder="Укажите дату"
+                      required>
+                    <span class="check-out-text">На эти даты есть свободные номера. Пока есть.</span>
+                  </li>
+                  <li class="modal-filter-label">
+                    Взрослые:
+                  </li>
+                  <li class="adults">
+                    <svg class="value-changes" width="13" height="1" viewBox="0 0 13 1" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0v1h13V0H0Z" />
+                    </svg>
+                    <input class="number-of-guests" type="number" value="2" min="1" placeholder="1" required>
+                    <svg class="value-changes-plus" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                    </svg>
+                  </li>
+                  <span class="modal-filter-label modal-filter-icon">
+                    <li class="modal-filter-label kids-label">
+                      Дети:
+                      <span class="tooltip">
+                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                          <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#a)" fill="#fff">
+                              <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                            </g>
+                            <defs>
+                              <clipPath id="a">
+                                <path fill="#fff" d="M0 0h1v9H0z" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые
+                          будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                      </span>
+                    </li>
+                  </span>
+                  <li class="kids">
+                    <svg class="value-changes" width="13" height="1" viewBox="0 0 13 1" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0v1h13V0H0Z" />
+                    </svg>
+                    <input class="number-of-guests" type="number" value="1" min="0" placeholder="0">
+                    <svg class="value-changes-plus" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                    </svg>
+                  </li>
+                </ol>
+              </fieldset>
+              <button class="button button-blue modal-button" type="submit">
+                <span class="submit-modal">Найти</span>
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 
