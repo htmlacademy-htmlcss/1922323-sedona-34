@@ -264,12 +264,14 @@ body {
 
 .advantages-item__text {
     width: 230px;
+    max-height: 200px;
+    overflow: auto;
     padding: 92px 85px;
 }
 
 .advantages-item__text-with-icons {
     width: 230px;
-    padding: 80px 85px;
+    padding: 182px 85px 80px;
 }
 
 .advantages-icon {
@@ -312,16 +314,43 @@ body {
     padding-bottom: 30px;
 }
 
+.hotel-icon {
+    background-image: url('../images/hotel.svg');
+    background-repeat: no-repeat;
+    background-position: top 80px center;
+}
+
+.food-icon {
+    background-image: url('../images/food.svg');
+    background-repeat: no-repeat;
+    background-position: top 80px center;
+}
+
+.gift-icon {
+    background-image: url('../images/gift.svg');
+    background-repeat: no-repeat;
+    background-position: top 80px center;
+}
+
+.third-row {
+    padding-top: 102px;
+    padding-bottom: 103px;
+}
+
 /* Поиск отелей */
 .search-hotels {
     text-align: center;
     margin-top: 92px;
     margin-bottom: 92px;
+
 }
 
 .search-title {
     margin: 0;
     padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
     text-transform: uppercase;
 }
 
@@ -394,7 +423,7 @@ body {
     color: #fff;
     background-color: #82B3D3;
     background-image: url("../images/background-newsletter.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
 }
@@ -402,7 +431,7 @@ body {
 .newsletter-title {
     margin: 0;
     padding-top: 94px;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -435,8 +464,7 @@ body {
 }
 
 .submit-button {
-    padding-left: 34px;
-    padding-right: 34px;
+    padding: 12px 34px;
     border-radius: 0 10px 10px 0;
     border: none;
 }
@@ -512,6 +540,10 @@ body {
     opacity: 30%;
 }
 
+.footer-logo-html-academy {
+    padding-top: 2px;
+}
+
 .page-footer-logo:hover .footer-logo-html-academy {
     fill: #756157;
 }
@@ -569,7 +601,7 @@ body {
     color: #ffffff;
     background-color: #82B3D3;
     background-image: url("../images/catalog-background.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -679,11 +711,13 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 32px;
+    width: 288px;
 }
 
 .catalog-filter-label {
     display: flex;
     padding: 14px 18px;
+    width: 108px;
 }
 
 .catalog-filter-label:hover {
@@ -718,6 +752,7 @@ body {
     border: none;
     appearance: textfield;
     padding-right: 30px;
+    width: 64px;
 }
 
 .price::-webkit-outer-spin-button,
@@ -1167,6 +1202,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     padding-left: 60px;
+    -moz-appearance: textfield;
 }
 
 .number-of-guests::-webkit-outer-spin-button,
