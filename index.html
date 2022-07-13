@@ -50,7 +50,7 @@
         <!-- Приветственная картинка -->
         <div class="welcome-picture">
           <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-          <img class="welcome-picture-content img-block" alt="Приветственная картинка" src="images/welcome.svg"
+          <img class="welcome-picture-content img-block" alt="Приветственная картинка." src="images/welcome.svg"
             width="458" height="352">
         </div>
         <!-- Преимущества -->
@@ -71,7 +71,7 @@
                 </div>
               </li>
               <li class="advantages-item__pic">
-                <img class="first-advantage img-block" alt="Городской пейзаж" src="images/photo-city.jpg" width="800"
+                <img class="first-advantage img-block" alt="Городской пейзаж." src="images/photo-city.jpg" width="800"
                   height="384">
               </li>
               <li class="advantages-item list-style">
@@ -96,7 +96,7 @@
                 </div>
               </li>
               <li class="advantages-item__pic">
-                <img class="second-advantage img-block" alt="Мост дьявола" src="images/photo-devils-bridge.jpg"
+                <img class="second-advantage img-block" alt="Мост дьявола." src="images/photo-devils-bridge.jpg"
                   width="800" height="384">
               </li>
               <li class="advantages-item">
@@ -197,6 +197,7 @@
           </div>
         </section>
       </footer>
+      <!--Модальное окно-->
       <div class="modal-container modal-container-close">
         <div class="modal modal-search">
           <button class="modal-close-button">
@@ -212,14 +213,14 @@
                     Дата заезда:
                   </li>
                   <li class="date-in">
-                    <input class="check-in-out-dates" type="date" value="2020-04-27" min="2022-02-24" required>
+                    <input class="arrival-dates" type="text" value="27 апреля 2020" placeholder="27 апреля 2020" onfocus="this.type='date'" onblur="this.type='text'" required>
                     <span class="check-in-text">Мы не можем отправить вас в прошлое.</span>
                   </li>
                   <li class="modal-filter-label">
                     Дата выезда:
                   </li>
                   <li class="date-out">
-                    <input class="check-in-out-dates" type="date" value="2021-09-01" required>
+                    <input class="arrival-dates" type="text" value="1 сентября 2021" placeholder="1 сентября 2021" onfocus="this.type='date'" onblur="this.type='text'" required>
                     <span class="check-out-text">На эти даты есть свободные номера. Пока есть.</span>
                   </li>
                   <li class="modal-filter-label">

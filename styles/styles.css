@@ -49,6 +49,8 @@ body {
 .page-wrapper {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 40px 0 40px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* Button */
@@ -201,7 +203,7 @@ body {
 .welcome-picture {
     position: relative;
     color: #fff;
-    background-color: rgba(131, 179, 211, 0.12);
+    background-color: #3F5E72;
     background-image: url("../images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -357,6 +359,7 @@ body {
 .call-to-search {
     margin: 0;
     padding-bottom: 56px;
+    color: #333333;
 }
 
 .search-button-main {
@@ -436,6 +439,10 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+}
+
+.newsletter-catalog {
+    padding-top: 0;
 }
 
 .call-to-subscribe {
@@ -569,7 +576,7 @@ body {
     padding: 0;
     width: 110px;
     margin-left: 72px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
 }
 
 .breadcrumbs-item {
@@ -608,16 +615,17 @@ body {
 .inner-header-title {
     margin: 0;
     line-height: 78px;
-    padding-left: 70px;
-    padding-top: 35px;
+    padding: 35px 70px 10px 70px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
 }
 
 .catalog-filter {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
-    padding: 0 70px 70px 70px;
+    padding: 0 70px 62px 70px;
     width: 1060px;
 }
 
@@ -626,6 +634,8 @@ body {
     font-size: 20px;
     line-height: 26px;
     margin-bottom: 30px;
+    padding: 0;
+    text-transform: capitalize;
 }
 
 .catalog-filter-submit {
@@ -641,7 +651,7 @@ body {
 
 .catalog-filter-group {
     margin: 0;
-    padding: 0;
+    padding: 0 70px 0 0;
     border: none;
 }
 
@@ -655,10 +665,18 @@ body {
     line-height: 21px;
 }
 
+.last-item {
+    padding-bottom: 0;
+}
+
+.type-of-residence {
+    padding-right: 178px;
+}
+
 .control-mark {
     position: absolute;
-    top: 2px;
-    left: 0;
+    top: 0;
+    left: 1px;
     width: 20px;
     height: 20px;
     background-color: #ffffff;
@@ -707,16 +725,20 @@ body {
 }
 
 /*Слайдер*/
+.price-title{
+    margin-bottom: 34px;
+}
+
 .range-wrapper-inputs {
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     width: 288px;
 }
 
 .catalog-filter-label {
     display: flex;
-    padding: 14px 18px;
+    padding: 10px 16px;
     width: 108px;
 }
 
@@ -725,7 +747,7 @@ body {
 }
 
 .catalog-filter-label:focus {
-    box-shadow: 0 0 0 3px #81B3D2;
+    box-shadow: 0 0 0 3px #81B3D2, 0 0 0 3px #81B3D2 inset;
 }
 
 .catalog-filter-label:active {
@@ -820,7 +842,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 55px 72px;
+    padding: 55px 72px 28px 72px;
     justify-content: space-between;
 }
 
@@ -843,7 +865,7 @@ body {
 
 .select-control {
     width: 100%;
-    padding: 14px 20px;
+    padding: 12px 20px;
     padding-right: 97px;
     font-family: inherit;
     font-weight: 400;
@@ -853,7 +875,7 @@ body {
     border-radius: 4px;
     background-image: url("../images/selector-arrow.svg");
     background-repeat: no-repeat;
-    background-position: right 20px center;
+    background-position: right 18px center;
     appearance: none;
 }
 
@@ -929,17 +951,22 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 340px);
     column-gap: 18px;
-    margin-top: 56px;
-    margin-bottom: 96px;
+    padding-top: 56px;
+    padding-bottom: 63px;
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .hotel-card-image {
-    margin-bottom: 16px;
+    margin-bottom: 11px;
 }
 
 .hotel-card-title{
     margin: 0;
     margin-bottom: 16px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .hotel-card-link {
@@ -987,6 +1014,7 @@ body {
     align-items: center;
     width: 1056px;
     margin: 0 auto;
+    padding-bottom: 119px;
 }
 
 .pagination {
@@ -1000,7 +1028,7 @@ body {
 .pagination-link {
     display: flex;
     justify-content: center;
-    width: 60px;
+    min-width: 24px;
     height: 60px;
     line-height: 36px;
     font-weight: 700;
@@ -1011,6 +1039,8 @@ body {
     background-color: #82B3D3;
     text-decoration: none;
     border-radius: 4px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 .pagination-current {
@@ -1035,9 +1065,16 @@ body {
     margin-left: auto;
 }
 
+.quantity-label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
 .quantity-select {
     width: 160px;
-    margin-left: 50px;
+    margin-left: 44px;
 }
 
 .newsletter-catalog {
@@ -1100,6 +1137,8 @@ body {
 }
 
 .modal-button {
+    padding-top: 12px;
+    padding-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -1139,9 +1178,9 @@ body {
     font-size: 20px;
     line-height: 26px;
     text-transform: capitalize;
-    margin-bottom: 40px;
-
+    margin-bottom: 42px;
 }
+
 .adults,
 .kids {
     position: relative;
@@ -1163,7 +1202,7 @@ body {
     position: absolute;
     width: 13px;
     height: 13px;
-    right: 10px;
+    right: 12px;
     top: 14px;
     padding: 6px;
     fill: #000000;
@@ -1212,7 +1251,7 @@ body {
 }
 
 .kids-label {
-    margin: 0 43px 0 56px;
+    margin: 0 43px 0 49px;
 }
 
 .kids {
@@ -1225,7 +1264,7 @@ body {
     margin-left: auto;
 }
 
-.check-in-out-dates {
+.arrival-dates {
     position: relative;
     width: 382px;
     height: 50px;
@@ -1244,21 +1283,25 @@ body {
     background-position: top 18px right 19px;
 }
 
-.check-in-out-dates::-webkit-calendar-picker-indicator {
+.arrival-dates::placeholder {
+    color: #000000;
+}
+
+.arrival-dates::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
 
-.check-in-out-dates:hover {
+.arrival-dates:hover {
     background-color: #E6E6E6;
 }
 
-.check-in-out-dates:focus {
+.arrival-dates:focus {
     background-color: #E6E6E6;
     outline: none;
     box-shadow: 0 0 0 3px #83B3D3;
 }
 
-.check-in-out-dates:active {
+.arrival-dates:active {
     background-color: #ffffff;
     box-shadow: 0 0 0 2px #000000;
 }
@@ -1318,7 +1361,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     text-transform: none;
-    padding: 15px 18px 18px 22px;
+    padding: 15px 18px 23px 22px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     position: absolute;

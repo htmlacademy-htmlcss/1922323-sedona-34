@@ -87,7 +87,7 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
+                    <label class="control last-item">
                       <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
                       <span class="control-mark"></span>
                       <span class="control-label">Wi-Fi</span>
@@ -95,7 +95,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group type-of-residence">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list list-style">
                   <li class="catalog-filter-item">
@@ -114,7 +114,7 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
+                    <label class="control last-item">
                       <input class="visually-hidden control-input" type="radio" name="type-of-residence"
                         value="apartments">
                       <span class="control-mark radio"></span>
@@ -124,7 +124,7 @@
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <legend class="catalog-filter-title price-title">Стоимость, ₽:</legend>
                 <div class="range">
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label filter-from">
@@ -180,7 +180,7 @@
             <ul class="hotel-list list-style">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/Amara-Resort-Spa.jpg" alt="Amara Resort & Spa" width="300"
+                  <img class="hotel-card-image" src="images/Amara-Resort-Spa.jpg" alt="Amara Resort & Spa." width="300"
                     height="211">
                   <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                 </a>
@@ -196,7 +196,7 @@
               </li>
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/Villas-at-Poco-Diablo.jpg" alt="Villas at Poco Diablo"
+                  <img class="hotel-card-image" src="images/Villas-at-Poco-Diablo.jpg" alt="Villas at Poco Diablo."
                     width="300" height="211">
                   <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                 </a>
@@ -228,7 +228,7 @@
               </li>
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/GreenTree-Inn.jpg" alt="GreenTree Inn" width="300"
+                  <img class="hotel-card-image" src="images/GreenTree-Inn.jpg" alt="GreenTree Inn." width="300"
                     height="211">
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
                 </a>
@@ -269,7 +269,7 @@
               </li>
             </ul>
             <div class="hotels-on-page">
-              <label for="hotels">Гостиниц на странице:</label>
+              <label class="quantity-label" for="hotels">Гостиниц на странице:</label>
               <select class="select-control quantity-select" aria-label="Гостиниц на странице" id="hotels">
                 <option value="4">4</option>
                 <option value="5">5</option>
@@ -281,8 +281,8 @@
       </main>
       <!-- Подписка на рассылку -->
       <section class="newsletter-catalog">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="call-to-subscribe">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="newsletter-title newsletter-catalog">Подпишитесь на рассылку</h2>
+        <p class="call-to-subscribe">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
