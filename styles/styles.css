@@ -673,7 +673,7 @@ body {
     padding-right: 178px;
 }
 
-.control-mark {
+.control::before {
     position: absolute;
     top: 0;
     left: 1px;
@@ -681,36 +681,38 @@ body {
     height: 20px;
     background-color: #ffffff;
     border-radius: 4px;
+    content: "";
 }
 
-.control:hover .control-mark {
+.catalog-filter-item:hover .control::before {
     opacity: 60%;
 }
 
-.control:focus .control-mark {
+.catalog-filter-item:focus .control::before {
     opacity: 60%;
     box-shadow: 0 0 0 3px #83B3D3;
+    outline: none;
 }
 
-.control:active .control-mark {
+.catalog-filter-item:active .control::before {
     opacity: 30%;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked + .control::after {
     position: absolute;
-    left: 4px;
+    left: 5px;
     top: -2px;
     content: url('../images/check-mark.svg');
 }
 
-.control-input[type="radio"] + .control-mark {
+.control-input[type="radio"] + .control::before {
     border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked + .control-mark::after {
+.control-input[type="radio"]:checked + .control::after {
     position: absolute;
     top: 5px;
-    left: 5px;
+    left: 6px;
     width: 10px;
     height: 10px;
     background-color: #3F5E72;
@@ -718,9 +720,9 @@ body {
     content: "";
 }
 
-.control:hover .radio,
-.control:active .radio,
-.control:focus .radio {
+.catalog-filter-item:hover .radio,
+.catalog-filter-item:active .radio,
+.catalog-filter-item:focus .radio {
     opacity: 100%;
 }
 
@@ -1186,35 +1188,57 @@ body {
     position: relative;
 }
 
+.value-change-button {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    padding: 13px;
+    cursor: pointer;
+    border: 0;
+}
+
 .value-changes {
     position: absolute;
     width: 13px;
     height: 1px;
-    left: 10px;
-    top: 15px;
+    left: 0;
+    top: 0;
     padding: 12px 6px;
     fill: #000000;
     opacity: 0.3;
     cursor: pointer;
 }
 
+.value-change-button-plus {
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    padding: 13px;
+    cursor: pointer;
+    border: 0;
+}
+
 .value-changes-plus {
     position: absolute;
     width: 13px;
     height: 13px;
-    right: 12px;
-    top: 14px;
+    right: 0;
+    top: 0;
     padding: 6px;
     fill: #000000;
     opacity: 0.3;
     cursor: pointer;
 }
 
+.value-change-button-plus:hover,
+.value-change-button:hover,
 .value-changes:hover,
 .value-changes-plus:hover {
     opacity: 1;
 }
 
+.value-change-button-plus:focus,
+.value-change-button:focus,
 .value-changes:focus,
 .value-changes-plus:focus {
     opacity: 1;
@@ -1223,6 +1247,8 @@ body {
     outline: none;
 }
 
+.value-change-button-plus:active,
+.value-change-button:active,
 .value-changes:active,
 .value-changes-plus:active {
     opacity: 0.2;
@@ -1260,12 +1286,12 @@ body {
 
 .date-in,
 .date-out {
+    position: relative;
     grid-column: 2 / 5;
     margin-left: auto;
 }
 
 .arrival-dates {
-    position: relative;
     width: 382px;
     height: 50px;
     border: none;
@@ -1278,9 +1304,6 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    background-image: url('../images/modal-date.svg');
-    background-repeat: no-repeat;
-    background-position: top 18px right 19px;
 }
 
 .arrival-dates::placeholder {
@@ -1306,10 +1329,19 @@ body {
     box-shadow: 0 0 0 2px #000000;
 }
 
+.calend-icon {
+    position: absolute;
+    top: 19px;
+    right: 13px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .check-in-text {
     position: absolute;
-    top: 220px;
-    left: 225px;
+    top: 60px;
+    left: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1320,8 +1352,8 @@ body {
 
 .check-out-text {
     position: absolute;
-    top: 310px;
-    left: 225px;
+    top: 60px;
+    left: 0;
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
@@ -1349,6 +1381,10 @@ body {
 }
 
 .tooltip-toggle:hover {
+    background-color: #68A2CA;
+}
+.tooltip-toggle:focus {
+    outline: none;
     background-color: #68A2CA;
 }
 
