@@ -76,7 +76,6 @@ body {
 
 .button:focus {
     background-color: #615048;
-    outline: none;
 }
 
 .button:active {
@@ -381,7 +380,6 @@ body {
 
 .button-blue:focus {
     background-color: #68A2CA;
-    outline: none;
 }
 
 .button-reset {
@@ -413,7 +411,6 @@ body {
 
 .button-fav:focus {
     background-color: #6C9E42;
-    outline: none;
 }
 
 .big-button {
@@ -513,7 +510,6 @@ body {
 
 .footer-social-link:focus .footer-social-icon {
     fill: #68A2CA;
-    outline: none;
 }
 
 .footer-social-link:active .footer-social-icon {
@@ -539,7 +535,6 @@ body {
 
 .footer-contacts-address-phone:focus {
     color: #756157;
-    outline: none;
 }
 
 .footer-contacts-address-phone:active {
@@ -557,7 +552,6 @@ body {
 
 .page-footer-logo:focus .footer-logo-html-academy {
     fill: #756157;
-    outline: none;
 }
 
 .page-footer-logo:active .footer-logo-html-academy {
@@ -684,17 +678,17 @@ body {
     content: "";
 }
 
-.catalog-filter-item:hover .control::before {
+.control-input:hover + .control::before {
     opacity: 60%;
 }
 
-.catalog-filter-item:focus .control::before {
+.control-input:focus + .control::before {
     opacity: 60%;
     box-shadow: 0 0 0 3px #83B3D3;
     outline: none;
 }
 
-.catalog-filter-item:active .control::before {
+.control-input:active + .control::before {
     opacity: 30%;
 }
 
@@ -705,11 +699,11 @@ body {
     content: url('../images/check-mark.svg');
 }
 
-.control-input[type="radio"] + .control::before {
+.control-input-radio + .control::before {
     border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked + .control::after {
+.control-input-radio:checked + .control::after {
     position: absolute;
     top: 5px;
     left: 6px;
@@ -720,10 +714,14 @@ body {
     content: "";
 }
 
-.catalog-filter-item:hover .radio,
-.catalog-filter-item:active .radio,
-.catalog-filter-item:focus .radio {
+.control-input-radio:hover + .control::before,
+.control-input-radio:active + .control::before {
     opacity: 100%;
+}
+
+.control-input-radio:focus + .control::before {
+    box-shadow: 0 0 0 3px #83B3D3;
+    outline: none;
 }
 
 /*Слайдер*/
@@ -732,36 +730,34 @@ body {
 }
 
 .range-wrapper-inputs {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
     width: 288px;
 }
 
-.catalog-filter-label {
-    display: flex;
-    padding: 10px 16px;
-    width: 108px;
-}
-
-.catalog-filter-label:hover {
+.price:hover {
     border: 2px solid rgba(255, 255, 255, 0.6);
 }
 
-.catalog-filter-label:focus {
+.price:focus {
     box-shadow: 0 0 0 3px #81B3D2, 0 0 0 3px #81B3D2 inset;
+    outline: none;
 }
 
-.catalog-filter-label:active {
+.price:active {
     background-color: #756257;
 }
 
 .filter-from {
+    position: relative;
     border: 2px solid #FFFFFF;
     border-radius: 4px 0 0 4px;
 }
 
 .filter-before {
+    position: relative;
     border: 2px solid #FFFFFF;
     border-radius: 0 4px 4px 0;
 }
@@ -773,10 +769,9 @@ body {
     font-size: 18px;
     line-height: 21px;
     background-color: transparent;
-    border: none;
     appearance: textfield;
-    padding-right: 30px;
-    width: 64px;
+    padding: 11px 16px;
+    width: 108px;
 }
 
 .price::-webkit-outer-spin-button,
@@ -785,12 +780,27 @@ body {
   margin: 0;
 }
 
-.price-min-max {
+.price-from {
+    position: absolute;
+    top: 12px;
+    right: 159px;
+    color: #FFFFFF;
     font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    text-align: right;
+    opacity: 30%;
+}
+
+.price-before {
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     opacity: 30%;
 }
 
@@ -1056,7 +1066,6 @@ body {
 
 .pagination-link:focus:not(.pagination-current) {
     background-color: #68A2CA;
-    outline: none;
 }
 
 .pagination-link:active:not(.pagination-current) {
@@ -1272,8 +1281,8 @@ body {
 
 .number-of-guests::-webkit-outer-spin-button,
 .number-of-guests::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+    appearance: none;
+    margin: 0;
 }
 
 .kids-label {

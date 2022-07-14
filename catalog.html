@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Каталог отелей Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/favicon/favicon.ico">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -95,22 +95,22 @@
               <fieldset class="catalog-filter-group type-of-residence">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list list-style">
-                  <li class="catalog-filter-item radio">
-                    <input class="visually-hidden control-input" type="radio" name="type-of-residence" value="hotel"
-                      id="hotel" checked>
+                  <li class="catalog-filter-item">
+                    <input class="visually-hidden control-input-radio" type="radio" name="type-of-residence"
+                      value="hotel" id="hotel" checked>
                     <label for="hotel" class="control">
                       Гостиница
                     </label>
                   </li>
-                  <li class="catalog-filter-item radio">
-                    <input class="visually-hidden control-input" type="radio" name="type-of-residence" value="motel"
-                      id="motel">
+                  <li class="catalog-filter-item">
+                    <input class="visually-hidden control-input-radio" type="radio" name="type-of-residence"
+                      value="motel" id="motel">
                     <label for="motel" class="control">
                       Мотель
                     </label>
                   </li>
-                  <li class="catalog-filter-item radio">
-                    <input class="visually-hidden control-input" type="radio" name="type-of-residence"
+                  <li class="catalog-filter-item">
+                    <input class="visually-hidden control-input-radio" type="radio" name="type-of-residence"
                       value="apartments" id="apartments">
                     <label for="apartments" class="control last-item">
                       Апартаменты
@@ -122,14 +122,12 @@
                 <legend class="catalog-filter-title price-title">Стоимость, ₽:</legend>
                 <div class="range">
                   <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label filter-from">
-                      <input class="price" type="number" value="0" min="0" max="10000" step="500" placeholder="0">
-                      <span class="price-min-max">от</span>
-                    </label>
-                    <label class="catalog-filter-label filter-before">
-                      <input class="price" type="number" value="9000" min="0" max="10000" step="500" placeholder="9000">
-                      <span class="price-min-max">до</span>
-                    </label>
+                    <input class="price filter-from" type="number" value="0" min="0" max="10000" step="500"
+                      placeholder="0" id="min-price">
+                    <label for="min-price" class="price-from">от</label>
+                    <input class="price filter-before" type="number" value="9000" min="0" max="10000" step="500"
+                      placeholder="9000" id="max-price">
+                    <label for="max-price" class="price-before">до</label>
                   </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 228px">
