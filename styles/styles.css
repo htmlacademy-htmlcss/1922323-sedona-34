@@ -49,6 +49,8 @@ body {
 .page-wrapper {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 40px 0 40px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* Button */
@@ -74,7 +76,6 @@ body {
 
 .button:focus {
     background-color: #615048;
-    outline: none;
 }
 
 .button:active {
@@ -201,7 +202,7 @@ body {
 .welcome-picture {
     position: relative;
     color: #fff;
-    background-color: rgba(131, 179, 211, 0.12);
+    background-color: #3F5E72;
     background-image: url("../images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -264,12 +265,14 @@ body {
 
 .advantages-item__text {
     width: 230px;
+    max-height: 200px;
+    overflow: auto;
     padding: 92px 85px;
 }
 
 .advantages-item__text-with-icons {
     width: 230px;
-    padding: 80px 85px;
+    padding: 182px 85px 80px;
 }
 
 .advantages-icon {
@@ -312,22 +315,50 @@ body {
     padding-bottom: 30px;
 }
 
+.hotel-icon {
+    background-image: url('../images/hotel.svg');
+    background-repeat: no-repeat;
+    background-position: top 80px center;
+}
+
+.food-icon {
+    background-image: url('../images/food.svg');
+    background-repeat: no-repeat;
+    background-position: top 80px center;
+}
+
+.gift-icon {
+    background-image: url('../images/gift.svg');
+    background-repeat: no-repeat;
+    background-position: top 80px center;
+}
+
+.third-row {
+    padding-top: 102px;
+    padding-bottom: 103px;
+}
+
 /* Поиск отелей */
 .search-hotels {
     text-align: center;
     margin-top: 92px;
     margin-bottom: 92px;
+
 }
 
 .search-title {
     margin: 0;
     padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
     text-transform: uppercase;
 }
 
 .call-to-search {
     margin: 0;
     padding-bottom: 56px;
+    color: #333333;
 }
 
 .search-button-main {
@@ -349,7 +380,6 @@ body {
 
 .button-blue:focus {
     background-color: #68A2CA;
-    outline: none;
 }
 
 .button-reset {
@@ -381,7 +411,6 @@ body {
 
 .button-fav:focus {
     background-color: #6C9E42;
-    outline: none;
 }
 
 .big-button {
@@ -394,7 +423,7 @@ body {
     color: #fff;
     background-color: #82B3D3;
     background-image: url("../images/background-newsletter.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
 }
@@ -402,11 +431,15 @@ body {
 .newsletter-title {
     margin: 0;
     padding-top: 94px;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+}
+
+.newsletter-catalog {
+    padding-top: 0;
 }
 
 .call-to-subscribe {
@@ -435,8 +468,7 @@ body {
 }
 
 .submit-button {
-    padding-left: 34px;
-    padding-right: 34px;
+    padding: 12px 34px;
     border-radius: 0 10px 10px 0;
     border: none;
 }
@@ -478,7 +510,6 @@ body {
 
 .footer-social-link:focus .footer-social-icon {
     fill: #68A2CA;
-    outline: none;
 }
 
 .footer-social-link:active .footer-social-icon {
@@ -504,12 +535,15 @@ body {
 
 .footer-contacts-address-phone:focus {
     color: #756157;
-    outline: none;
 }
 
 .footer-contacts-address-phone:active {
     color: #756157;
     opacity: 30%;
+}
+
+.footer-logo-html-academy {
+    padding-top: 2px;
 }
 
 .page-footer-logo:hover .footer-logo-html-academy {
@@ -518,7 +552,6 @@ body {
 
 .page-footer-logo:focus .footer-logo-html-academy {
     fill: #756157;
-    outline: none;
 }
 
 .page-footer-logo:active .footer-logo-html-academy {
@@ -537,7 +570,7 @@ body {
     padding: 0;
     width: 110px;
     margin-left: 72px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
 }
 
 .breadcrumbs-item {
@@ -569,23 +602,24 @@ body {
     color: #ffffff;
     background-color: #82B3D3;
     background-image: url("../images/catalog-background.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .inner-header-title {
     margin: 0;
     line-height: 78px;
-    padding-left: 70px;
-    padding-top: 35px;
+    padding: 35px 70px 10px 70px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
 }
 
 .catalog-filter {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
-    padding: 0 70px 70px 70px;
+    padding: 0 70px 62px 70px;
     width: 1060px;
 }
 
@@ -594,6 +628,8 @@ body {
     font-size: 20px;
     line-height: 26px;
     margin-bottom: 30px;
+    padding: 0;
+    text-transform: capitalize;
 }
 
 .catalog-filter-submit {
@@ -609,7 +645,7 @@ body {
 
 .catalog-filter-group {
     margin: 0;
-    padding: 0;
+    padding: 0 70px 0 0;
     border: none;
 }
 
@@ -623,44 +659,54 @@ body {
     line-height: 21px;
 }
 
-.control-mark {
+.last-item {
+    padding-bottom: 0;
+}
+
+.type-of-residence {
+    padding-right: 178px;
+}
+
+.control::before {
     position: absolute;
-    top: 2px;
-    left: 0;
+    top: 0;
+    left: 1px;
     width: 20px;
     height: 20px;
     background-color: #ffffff;
     border-radius: 4px;
+    content: "";
 }
 
-.control:hover .control-mark {
+.control-input:hover + .control::before {
     opacity: 60%;
 }
 
-.control:focus .control-mark {
+.control-input:focus + .control::before {
     opacity: 60%;
     box-shadow: 0 0 0 3px #83B3D3;
+    outline: none;
 }
 
-.control:active .control-mark {
+.control-input:active + .control::before {
     opacity: 30%;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked + .control::after {
     position: absolute;
-    left: 4px;
+    left: 5px;
     top: -2px;
     content: url('../images/check-mark.svg');
 }
 
-.control-input[type="radio"] + .control-mark {
+.control-input-radio + .control::before {
     border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked + .control-mark::after {
+.control-input-radio:checked + .control::after {
     position: absolute;
     top: 5px;
-    left: 5px;
+    left: 6px;
     width: 10px;
     height: 10px;
     background-color: #3F5E72;
@@ -668,42 +714,50 @@ body {
     content: "";
 }
 
-.control:hover .radio,
-.control:active .radio,
-.control:focus .radio {
+.control-input-radio:hover + .control::before,
+.control-input-radio:active + .control::before {
     opacity: 100%;
 }
 
+.control-input-radio:focus + .control::before {
+    box-shadow: 0 0 0 3px #83B3D3;
+    outline: none;
+}
+
 /*Слайдер*/
+.price-title{
+    margin-bottom: 34px;
+}
+
 .range-wrapper-inputs {
+    position: relative;
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
+    width: 288px;
 }
 
-.catalog-filter-label {
-    display: flex;
-    padding: 14px 18px;
-}
-
-.catalog-filter-label:hover {
+.price:hover {
     border: 2px solid rgba(255, 255, 255, 0.6);
 }
 
-.catalog-filter-label:focus {
-    box-shadow: 0 0 0 3px #81B3D2;
+.price:focus {
+    box-shadow: 0 0 0 3px #81B3D2, 0 0 0 3px #81B3D2 inset;
+    outline: none;
 }
 
-.catalog-filter-label:active {
+.price:active {
     background-color: #756257;
 }
 
 .filter-from {
+    position: relative;
     border: 2px solid #FFFFFF;
     border-radius: 4px 0 0 4px;
 }
 
 .filter-before {
+    position: relative;
     border: 2px solid #FFFFFF;
     border-radius: 0 4px 4px 0;
 }
@@ -715,9 +769,9 @@ body {
     font-size: 18px;
     line-height: 21px;
     background-color: transparent;
-    border: none;
     appearance: textfield;
-    padding-right: 30px;
+    padding: 11px 16px;
+    width: 108px;
 }
 
 .price::-webkit-outer-spin-button,
@@ -726,12 +780,27 @@ body {
   margin: 0;
 }
 
-.price-min-max {
+.price-from {
+    position: absolute;
+    top: 12px;
+    right: 159px;
+    color: #FFFFFF;
     font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    text-align: right;
+    opacity: 30%;
+}
+
+.price-before {
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     opacity: 30%;
 }
 
@@ -785,7 +854,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 55px 72px;
+    padding: 55px 72px 28px 72px;
     justify-content: space-between;
 }
 
@@ -808,7 +877,7 @@ body {
 
 .select-control {
     width: 100%;
-    padding: 14px 20px;
+    padding: 12px 20px;
     padding-right: 97px;
     font-family: inherit;
     font-weight: 400;
@@ -818,7 +887,7 @@ body {
     border-radius: 4px;
     background-image: url("../images/selector-arrow.svg");
     background-repeat: no-repeat;
-    background-position: right 20px center;
+    background-position: right 18px center;
     appearance: none;
 }
 
@@ -894,17 +963,22 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 340px);
     column-gap: 18px;
-    margin-top: 56px;
-    margin-bottom: 96px;
+    padding-top: 56px;
+    padding-bottom: 63px;
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .hotel-card-image {
-    margin-bottom: 16px;
+    margin-bottom: 11px;
 }
 
 .hotel-card-title{
     margin: 0;
     margin-bottom: 16px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .hotel-card-link {
@@ -952,6 +1026,7 @@ body {
     align-items: center;
     width: 1056px;
     margin: 0 auto;
+    padding-bottom: 119px;
 }
 
 .pagination {
@@ -965,7 +1040,7 @@ body {
 .pagination-link {
     display: flex;
     justify-content: center;
-    width: 60px;
+    min-width: 24px;
     height: 60px;
     line-height: 36px;
     font-weight: 700;
@@ -976,6 +1051,8 @@ body {
     background-color: #82B3D3;
     text-decoration: none;
     border-radius: 4px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 .pagination-current {
@@ -989,7 +1066,6 @@ body {
 
 .pagination-link:focus:not(.pagination-current) {
     background-color: #68A2CA;
-    outline: none;
 }
 
 .pagination-link:active:not(.pagination-current) {
@@ -1000,9 +1076,16 @@ body {
     margin-left: auto;
 }
 
+.quantity-label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
 .quantity-select {
     width: 160px;
-    margin-left: 50px;
+    margin-left: 44px;
 }
 
 .newsletter-catalog {
@@ -1065,6 +1148,8 @@ body {
 }
 
 .modal-button {
+    padding-top: 12px;
+    padding-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -1104,43 +1189,65 @@ body {
     font-size: 20px;
     line-height: 26px;
     text-transform: capitalize;
-    margin-bottom: 40px;
-
+    margin-bottom: 42px;
 }
+
 .adults,
 .kids {
     position: relative;
+}
+
+.value-change-button {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    padding: 13px;
+    cursor: pointer;
+    border: 0;
 }
 
 .value-changes {
     position: absolute;
     width: 13px;
     height: 1px;
-    left: 10px;
-    top: 15px;
+    left: 0;
+    top: 0;
     padding: 12px 6px;
     fill: #000000;
     opacity: 0.3;
     cursor: pointer;
 }
 
+.value-change-button-plus {
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    padding: 13px;
+    cursor: pointer;
+    border: 0;
+}
+
 .value-changes-plus {
     position: absolute;
     width: 13px;
     height: 13px;
-    right: 10px;
-    top: 14px;
+    right: 0;
+    top: 0;
     padding: 6px;
     fill: #000000;
     opacity: 0.3;
     cursor: pointer;
 }
 
+.value-change-button-plus:hover,
+.value-change-button:hover,
 .value-changes:hover,
 .value-changes-plus:hover {
     opacity: 1;
 }
 
+.value-change-button-plus:focus,
+.value-change-button:focus,
 .value-changes:focus,
 .value-changes-plus:focus {
     opacity: 1;
@@ -1149,6 +1256,8 @@ body {
     outline: none;
 }
 
+.value-change-button-plus:active,
+.value-change-button:active,
 .value-changes:active,
 .value-changes-plus:active {
     opacity: 0.2;
@@ -1167,16 +1276,17 @@ body {
     font-size: 18px;
     line-height: 21px;
     padding-left: 60px;
+    -moz-appearance: textfield;
 }
 
 .number-of-guests::-webkit-outer-spin-button,
 .number-of-guests::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+    appearance: none;
+    margin: 0;
 }
 
 .kids-label {
-    margin: 0 43px 0 56px;
+    margin: 0 43px 0 49px;
 }
 
 .kids {
@@ -1185,12 +1295,12 @@ body {
 
 .date-in,
 .date-out {
+    position: relative;
     grid-column: 2 / 5;
     margin-left: auto;
 }
 
-.check-in-out-dates {
-    position: relative;
+.arrival-dates {
     width: 382px;
     height: 50px;
     border: none;
@@ -1203,34 +1313,53 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    background-image: url('../images/modal-date.svg');
-    background-repeat: no-repeat;
-    background-position: top 18px right 19px;
 }
 
-.check-in-out-dates::-webkit-calendar-picker-indicator {
+.arrival-dates::placeholder {
+    color: #000000;
+}
+
+.arrival-dates::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
 
-.check-in-out-dates:hover {
+.arrival-dates:hover {
     background-color: #E6E6E6;
 }
 
-.check-in-out-dates:focus {
+.arrival-dates:focus {
     background-color: #E6E6E6;
     outline: none;
     box-shadow: 0 0 0 3px #83B3D3;
 }
 
-.check-in-out-dates:active {
+.arrival-dates:active {
     background-color: #ffffff;
     box-shadow: 0 0 0 2px #000000;
 }
 
+.calend-icon {
+    position: absolute;
+    top: 19px;
+    right: 13px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.calend-icon::after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 1px;
+    right: 6px;
+    content: url('../images/modal-date.svg');
+}
+
 .check-in-text {
     position: absolute;
-    top: 220px;
-    left: 225px;
+    top: 60px;
+    left: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1241,8 +1370,8 @@ body {
 
 .check-out-text {
     position: absolute;
-    top: 310px;
-    left: 225px;
+    top: 60px;
+    left: 0;
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
@@ -1272,6 +1401,10 @@ body {
 .tooltip-toggle:hover {
     background-color: #68A2CA;
 }
+.tooltip-toggle:focus {
+    outline: none;
+    background-color: #68A2CA;
+}
 
 .tooltip-text {
     color: #ffffff;
@@ -1282,7 +1415,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     text-transform: none;
-    padding: 15px 18px 18px 22px;
+    padding: 15px 18px 23px 22px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     position: absolute;

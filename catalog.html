@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Каталог отелей Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/favicon/favicon.ico">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -73,75 +73,68 @@
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list list-style">
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="Бассейн" checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Бассейн</span>
+                    <input class="visually-hidden control-input" type="checkbox" name="Бассейн" id="pool" checked>
+                    <label for="pool" class="control">
+                      Бассейн
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="Парковка" checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Парковка</span>
+                    <input class="visually-hidden control-input" type="checkbox" name="Парковка" id="parking" checked>
+                    <label for="parking" class="control">
+                      Парковка
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Wi-Fi</span>
+                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi" id="wi-fi">
+                    <label for="wi-fi" class="control last-item">
+                      Wi-Fi
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group type-of-residence">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list list-style">
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="type-of-residence" value="hotel"
-                        checked>
-                      <span class="control-mark radio"></span>
-                      <span class="control-label">Гостиница</span>
+                    <input class="visually-hidden control-input-radio" type="radio" name="type-of-residence"
+                      value="hotel" id="hotel" checked>
+                    <label for="hotel" class="control">
+                      Гостиница
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="type-of-residence" value="motel">
-                      <span class="control-mark radio"></span>
-                      <span class="control-label">Мотель</span>
+                    <input class="visually-hidden control-input-radio" type="radio" name="type-of-residence"
+                      value="motel" id="motel">
+                    <label for="motel" class="control">
+                      Мотель
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="type-of-residence"
-                        value="apartments">
-                      <span class="control-mark radio"></span>
-                      <span class="control-label">Апартаменты</span>
+                    <input class="visually-hidden control-input-radio" type="radio" name="type-of-residence"
+                      value="apartments" id="apartments">
+                    <label for="apartments" class="control last-item">
+                      Апартаменты
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <legend class="catalog-filter-title price-title">Стоимость, ₽:</legend>
                 <div class="range">
                   <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label filter-from">
-                      <input class="price" type="number" value="0" min="0" max="10000" step="500" placeholder="0">
-                      <span class="price-min-max">от</span>
-                    </label>
-                    <label class="catalog-filter-label filter-before">
-                      <input class="price" type="number" value="9000" min="0" max="10000" step="500" placeholder="9000">
-                      <span class="price-min-max">до</span>
-                    </label>
+                    <input class="price filter-from" type="number" value="0" min="0" max="10000" step="500"
+                      placeholder="0" id="min-price">
+                    <label for="min-price" class="price-from">от</label>
+                    <input class="price filter-before" type="number" value="9000" min="0" max="10000" step="500"
+                      placeholder="9000" id="max-price">
+                    <label for="max-price" class="price-before">до</label>
                   </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 228px">
-                      <button class="range-toggle toggle-min">
+                      <button type="button" class="range-toggle toggle-min">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button type="button" class="range-toggle toggle-max">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
@@ -180,8 +173,8 @@
             <ul class="hotel-list list-style">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/Amara-Resort-Spa.jpg" alt="Amara Resort & Spa" width="300"
-                    height="211">
+                  <img class="hotel-card-image" src="images/amara-resort-spa-cover.jpg" alt="Amara Resort & Spa."
+                    width="300" height="211">
                   <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                 </a>
                 <div class="hotel-card-content">
@@ -196,8 +189,8 @@
               </li>
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/Villas-at-Poco-Diablo.jpg" alt="Villas at Poco Diablo"
-                    width="300" height="211">
+                  <img class="hotel-card-image" src="images/villas-at-poco-diablo-cover.jpg"
+                    alt="Villas at Poco Diablo." width="300" height="211">
                   <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                 </a>
                 <div class="hotel-card-content">
@@ -212,8 +205,8 @@
               </li>
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/Desert-Quail-Inn.jpg" alt="Desert Quail Inn" width="300"
-                    height="211">
+                  <img class="hotel-card-image" src="images/desert-quail-inn-cover.jpg" alt="Desert Quail Inn"
+                    width="300" height="211">
                   <h3 class="hotel-card-title">Desert Quail Inn</h3>
                 </a>
                 <div class="hotel-card-content">
@@ -228,7 +221,7 @@
               </li>
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/GreenTree-Inn.jpg" alt="GreenTree Inn" width="300"
+                  <img class="hotel-card-image" src="images/greentree-inn-cover.jpg" alt="GreenTree Inn." width="300"
                     height="211">
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
                 </a>
@@ -269,7 +262,7 @@
               </li>
             </ul>
             <div class="hotels-on-page">
-              <label for="hotels">Гостиниц на странице:</label>
+              <label class="quantity-label" for="hotels">Гостиниц на странице:</label>
               <select class="select-control quantity-select" aria-label="Гостиниц на странице" id="hotels">
                 <option value="4">4</option>
                 <option value="5">5</option>
@@ -281,9 +274,10 @@
       </main>
       <!-- Подписка на рассылку -->
       <section class="newsletter-catalog">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="call-to-subscribe">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="newsletter-title newsletter-catalog">Подпишитесь на рассылку</h2>
+        <p class="call-to-subscribe">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
           <button class="button button-blue big-button submit-button" type="submit">Подписаться</button>
