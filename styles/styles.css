@@ -265,7 +265,6 @@ body {
 .advantages-item__text {
     width: 230px;
     max-height: 200px;
-    overflow: auto;
     padding: 92px 85px;
 }
 
@@ -306,6 +305,8 @@ body {
     white-space: pre-line;
     padding: 0;
     margin: 0;
+    height: 100px;
+    overflow: auto;
 }
 
 .advantages-description__number {
