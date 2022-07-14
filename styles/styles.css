@@ -1347,6 +1347,15 @@ body {
     cursor: pointer;
 }
 
+.calend-icon::after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 1px;
+    right: 6px;
+    content: url('../images/modal-date.svg');
+}
+
 .check-in-text {
     position: absolute;
     top: 60px;
