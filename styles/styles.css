@@ -49,7 +49,6 @@ body {
 .page-wrapper {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 40px 0 40px;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -79,7 +78,7 @@ body {
 }
 
 .button:active {
-    opacity: 30%;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .button:disabled {
@@ -358,7 +357,6 @@ body {
 .call-to-search {
     margin: 0;
     padding-bottom: 56px;
-    color: #333333;
 }
 
 .search-button-main {
@@ -380,6 +378,10 @@ body {
 
 .button-blue:focus {
     background-color: #68A2CA;
+}
+
+.button-blue:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .button-reset {
@@ -510,6 +512,7 @@ body {
 
 .footer-social-link:focus .footer-social-icon {
     fill: #68A2CA;
+    outline: auto;
 }
 
 .footer-social-link:active .footer-social-icon {
@@ -1020,6 +1023,10 @@ body {
     border-radius: 4px;
 }
 
+.not-black-text {
+    color: #333333;
+}
+
 /*Пагинация*/
 .pagination-wrapper {
     display: flex;
@@ -1069,7 +1076,7 @@ body {
 }
 
 .pagination-link:active:not(.pagination-current) {
-    opacity: 30%;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .hotels-on-page {
@@ -1204,6 +1211,7 @@ body {
     padding: 13px;
     cursor: pointer;
     border: 0;
+    background-color: transparent;
 }
 
 .value-changes {
@@ -1225,6 +1233,7 @@ body {
     padding: 13px;
     cursor: pointer;
     border: 0;
+    background-color: transparent;
 }
 
 .value-changes-plus {
