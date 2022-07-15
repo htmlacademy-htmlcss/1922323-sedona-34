@@ -44,12 +44,14 @@ body {
 
 .img-block {
     display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .page-wrapper {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 40px 0 40px;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -79,7 +81,7 @@ body {
 }
 
 .button:active {
-    opacity: 30%;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .button:disabled {
@@ -209,6 +211,7 @@ body {
 }
 
 .welcome-picture-content {
+    display: block;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 82px;
@@ -265,8 +268,6 @@ body {
 
 .advantages-item__text {
     width: 230px;
-    max-height: 200px;
-    overflow: auto;
     padding: 92px 85px;
 }
 
@@ -358,7 +359,6 @@ body {
 .call-to-search {
     margin: 0;
     padding-bottom: 56px;
-    color: #333333;
 }
 
 .search-button-main {
@@ -380,6 +380,10 @@ body {
 
 .button-blue:focus {
     background-color: #68A2CA;
+}
+
+.button-blue:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .button-reset {
@@ -504,6 +508,12 @@ body {
     fill: #83B3D3;
 }
 
+.footer-social-link {
+    display: block;
+    width: 48px;
+    height: 40px;
+}
+
 .footer-social-link:hover .footer-social-icon {
     fill: #68A2CA;
 }
@@ -524,9 +534,9 @@ body {
     line-height: 40px;
     text-transform: uppercase;
     text-decoration: none;
-    width: 720px;
-    margin-left: 42px;
-    margin-right: 42px;
+    width: 331px;
+    margin-left: 236px;
+    margin-right: 236px;
 }
 
 .footer-contacts-address-phone:hover {
@@ -1020,6 +1030,10 @@ body {
     border-radius: 4px;
 }
 
+.not-black-text {
+    color: #333333;
+}
+
 /*Пагинация*/
 .pagination-wrapper {
     display: flex;
@@ -1069,7 +1083,7 @@ body {
 }
 
 .pagination-link:active:not(.pagination-current) {
-    opacity: 30%;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .hotels-on-page {
@@ -1204,6 +1218,7 @@ body {
     padding: 13px;
     cursor: pointer;
     border: 0;
+    background-color: transparent;
 }
 
 .value-changes {
@@ -1225,6 +1240,7 @@ body {
     padding: 13px;
     cursor: pointer;
     border: 0;
+    background-color: transparent;
 }
 
 .value-changes-plus {
