@@ -44,6 +44,9 @@ body {
 
 .img-block {
     display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .page-wrapper {
@@ -208,6 +211,7 @@ body {
 }
 
 .welcome-picture-content {
+    display: block;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 82px;
@@ -264,7 +268,6 @@ body {
 
 .advantages-item__text {
     width: 230px;
-    max-height: 200px;
     padding: 92px 85px;
 }
 
@@ -305,8 +308,6 @@ body {
     white-space: pre-line;
     padding: 0;
     margin: 0;
-    height: 100px;
-    overflow: auto;
 }
 
 .advantages-description__number {
