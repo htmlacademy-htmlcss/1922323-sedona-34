@@ -534,9 +534,8 @@ body {
     line-height: 40px;
     text-transform: uppercase;
     text-decoration: none;
-    width: 331px;
-    margin-left: 236px;
-    margin-right: 236px;
+    width: 333px;
+    margin: 0 235px 0 235px;
 }
 
 .footer-contacts-address-phone:hover {
